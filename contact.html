@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Guna Lalitha Keerthi Inavalli</title>
+
+    <meta name="description"
+        content="Contact Guna Lalitha Keerthi Inavalli for internships, collaborations and frontend development opportunities.">
+
+    <meta name="keywords"
+        content="Contact, Portfolio, Frontend Developer, HTML, CSS, JavaScript">
+
+    <meta name="author"
+        content="Guna Lalitha Keerthi Inavalli">
+
+    <link rel="stylesheet"
+        href="css/style.css">
+    
+
+</head>
+
+<body>
+
+    <!-- Skip Link -->
+    <a href="#main-content"
+        class="skip-link">
+        Skip to Main Content
+    </a>
+
+    <!-- Header -->
+    <header>
+
+        <div class="container">
+
+            <h1>Contact Me</h1>
+
+            <nav aria-label="Main Navigation">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html"
+                            aria-current="page">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+                <button id="theme-toggle" aria-label="Toggle Theme">
+    🌙
+</button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Contact Information -->
+        <section aria-labelledby="contact-info-heading">
+
+            <div class="container">
+
+                <h2 id="contact-info-heading">
+                    Get In Touch
+                </h2>
+
+                <article class="card contact-info glass">
+
+                    <p>
+                        I am currently seeking internship opportunities and
+                        learning experiences in Front-End Development,
+                        Web Development and Software Engineering.
+                    </p>
+
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:keerthiinavalli@gmail.com">
+                            keerthiinavalli@gmail.com
+                        </a>
+                    </p>
+
+                    <p>
+                        <strong>Phone:</strong>
+                        <a href="tel:+919912158386">
+                            +91 99121 58386
+                        </a>
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong>
+                        Andhra Pradesh, India
+                    </p>
+
+                   <p>
+    <strong>LinkedIn:</strong>
+    <a href="https://www.linkedin.com/in/keerthi-inavalli-696573292"
+       target="_blank"
+       rel="noopener noreferrer">
+        linkedin.com/in/keerthi-inavalli-696573292
+    </a>
+</p>
+
+<p>
+    <strong>GitHub:</strong>
+    <a href="https://github.com/Keerthi3113"
+       target="_blank"
+       rel="noopener noreferrer">
+        github.com/Keerthi3113
+    </a>
+</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Accessible Contact Form -->
+        <section aria-labelledby="form-heading">
+
+            <div class="container">
+
+                <h2 id="form-heading">
+                    Send a Message
+                </h2>
+
+                <form
+                    action="#"
+                    method="post"
+                    aria-label="Contact Form">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            autocomplete="name">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            autocomplete="email">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required></textarea>
+
+                    </div>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Resume Download -->
+        <section aria-labelledby="resume-heading">
+
+            <div class="container">
+
+                <h2 id="resume-heading">
+                    Resume
+                </h2>
+
+                <article class="card">
+
+                    <p>
+                        Download my latest resume to learn more about my
+                        education, skills, projects and experience.
+                    </p>
+
+                    <a href="assets/resume.pdf"
+                        class="btn"
+                        download>
+                        Download Resume
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2025 Guna Lalitha Keerthi Inavalli
+        </p>
+
+    </footer>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const toggle = document.getElementById("theme-toggle");
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("theme");
+
+    if(savedTheme){
+        document.body.dataset.theme = savedTheme;
+    }
+
+    if(toggle){
+
+        toggle.addEventListener("click", () => {
+
+            const currentTheme =
+                document.body.dataset.theme === "dark"
+                ? ""
+                : "dark";
+
+            document.body.dataset.theme = currentTheme;
+
+            localStorage.setItem(
+                "theme",
+                currentTheme
+            );
+
+        });
+
+    }
+
+});
+</script>
+
+
+</body>
+
+</html>
